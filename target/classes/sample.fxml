@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="lblCargaInfo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.Controller">
+    <children>
+        <Button fx:id="btnCambiar" layoutX="545.0" layoutY="11.0" mnemonicParsing="false" onAction="#cambiarUbicacion" text="Cambiar..." />
+        <Label fx:id="lblUbicacion" layoutX="111.0" layoutY="18.0" prefHeight="17.0" prefWidth="347.0" text="C:">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="18.0" text="Origen de datos:" />
+        <Button fx:id="btnCargar" layoutX="14.0" layoutY="47.0" mnemonicParsing="false" onAction="#cargarDatos" text="Cargar datos" />
+        <ListView fx:id="lvwResultados" disable="true" layoutX="14.0" layoutY="281.0" prefHeight="218.0" prefWidth="598.0" />
+        <Label layoutX="15.0" layoutY="263.0" text="Resultados:" />
+        <Separator layoutX="14.0" layoutY="79.0" prefHeight="7.0" prefWidth="598.0" />
+        <Separator layoutX="14.0" layoutY="256.0" prefHeight="7.0" prefWidth="598.0" />
+        <Label layoutX="14.0" layoutY="96.0" text="Distrito: " />
+        <ComboBox fx:id="cboDistritos" disable="true" layoutX="71.0" layoutY="92.0" onAction="#elegirDistrito" prefHeight="25.0" prefWidth="336.0" />
+        <Label layoutX="14.0" layoutY="132.0" text="Sección: " />
+        <ComboBox fx:id="cboSecciones" disable="true" layoutX="71.0" layoutY="128.0" onAction="#elegirSeccion" prefHeight="25.0" prefWidth="336.0" />
+        <Label layoutX="14.0" layoutY="168.0" text="Circuito: " />
+        <ComboBox fx:id="cboCircuitos" disable="true" layoutX="71.0" layoutY="164.0" onAction="#elegirCircuito" prefHeight="25.0" prefWidth="336.0" />
+      <Label fx:id="lblCargaDatosInfo" layoutX="111.0" layoutY="51.0" prefHeight="17.0" prefWidth="180.0" />
+      <Label layoutX="14.0" layoutY="213.0" text="Mesa:" />
+      <ComboBox fx:id="cboMesa" disable="true" layoutX="71.0" layoutY="209.0" onAction="#elegirMesa" prefHeight="25.0" prefWidth="336.0" />
+    </children>
+</AnchorPane>
